@@ -1,10 +1,9 @@
 import "./card.scss";
-import React, { useState } from "react";
+import React from "react";
 import { Icon, Button } from "semantic-ui-react";
-import icon from "../../imgs/view.png";
 
 const CardExampleCard = (props) => (
-  <div className="card">
+  <div className="card" key={props.abc.id}>
     <img
       src="https://vcdn-sohoa.vnecdn.net/2021/01/21/HP-Elite-Folio-Front-Left-Forw-6107-5267-1611217952.jpg"
       wrapped

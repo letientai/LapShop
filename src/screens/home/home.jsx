@@ -7,6 +7,7 @@ import { Button, Checkbox, Form } from "semantic-ui-react";
 function Home() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
+  const [checkBox, setChetBox] = useState(false);
 
   const changeFirstName = (e) => {
     setFirstName([e.target.value]);
@@ -14,7 +15,9 @@ function Home() {
   const changeLastName = (e) => {
     setLastName([e.target.value]);
   };
-
+  const changeChetBox = () =>{
+    setChetBox(!checkBox);
+  }
 
   
 const data = [
@@ -45,7 +48,7 @@ const data = [
 ];
 
 const onSubmit = () => {
-  console.log(firstName, lastName);
+  console.log(firstName, lastName, checkBox);
 };
 
 
@@ -68,7 +71,7 @@ const onSubmit = () => {
               onChange={changeLastName}/>
           </Form.Field>
           <Form.Field>
-            <Checkbox label="I agree to the Terms and Conditions" />
+            <Checkbox label="I agree to the Terms and Conditions" onClick={changeChetBox}/>
           </Form.Field>
           <Button type="submit" color="green" onClick={onSubmit}>Submit</Button>
         </Form>

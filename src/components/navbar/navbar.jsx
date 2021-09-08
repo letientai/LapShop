@@ -1,5 +1,5 @@
 import "./navbar.scss";
-import React, { useState } from "react";
+import React from "react";
 import icon from '../../imgs/laptop.png'
 
 function Navbar() {
