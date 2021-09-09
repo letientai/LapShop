@@ -4,11 +4,13 @@ import { Icon, Button } from "semantic-ui-react";
 
 const CardExampleCard = (props) => (
   <div className="card" key={props.abc.id}>
-    <img
-      src="https://vcdn-sohoa.vnecdn.net/2021/01/21/HP-Elite-Folio-Front-Left-Forw-6107-5267-1611217952.jpg"
-      wrapped
-      ui={false}
-    />
+    <div className="imgs">
+      <img
+        src={props.abc.img}
+        wrapped
+        ui={false}
+      />
+    </div>
     <p>{props.abc.name}</p>
     <span>{props.abc.hang}</span>
     <p>Giá: {props.abc.gia}</p>
