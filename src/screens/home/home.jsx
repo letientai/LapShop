@@ -25,14 +25,14 @@ function Home() {
       id: 1,
       name: "Dell VivoBook A415EA i5 1135G7 (AM888T)",
       hang: "Dell",
-      gia: "25.250.000đ",
+      gia: "9.300.000đ",
       img: "https://cdn.vatgia.vn/pictures/fullsize/2018/02/02/vul1517565929.jpg",
     },
     {
       id: 2,
       name: "Asus ZenBook UX425EA i5 1135G7 (KI429T)",
       hang: "Asus",
-      gia: "9.300.000đ",
+      gia: "25.250.000đ",
       img: "https://phucanhcdn.com/media/product/29533_microsoft_surface_pro_2017__silver_.png",
     },
     {

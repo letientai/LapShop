@@ -11,14 +11,19 @@
             margin-left: 60px;
         }
     }
-    
-    .link{
-        width: 30%;
-        // float: right;
+    .options {
+        width: 50%;
+        height: 100%;
         display: flex;
-        p{
-            margin: 15px;
-            cursor: pointer;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: 20px;
+        
+        .option {
+          color: #fff;
+          padding: 10px 15px;
+          text-decoration: none;
+          cursor: pointer;
         }
-    }
+      }
 }
